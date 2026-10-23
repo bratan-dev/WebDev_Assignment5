@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap');
+
+:root {
+  color-scheme: light;
+  font-family: 'DM Sans', sans-serif;
+  color: #17243a;
+  background: #f4f7fb;
+  font-synthesis: none;
+}
+
+* { box-sizing: border-box; }
+
+body { margin: 0; min-width: 320px; }
+
+.site-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 18px max(24px, calc((100vw - 1080px) / 2));
+  background: #fff;
+  border-bottom: 1px solid #e4eaf2;
+}
+
+.site-title { color: #17243a; font: 700 18px 'Space Grotesk', sans-serif; text-decoration: none; }
+
+nav { display: flex; gap: 8px; }
+nav a, .back-link { color: #54647c; text-decoration: none; font-size: 14px; }
+nav a { padding: 9px 12px; border-radius: 9px; }
+nav a:hover, nav a[aria-current="page"] { color: #2457d6; background: #edf3ff; }
+
+.page-shell { width: min(100% - 40px, 960px); margin: 48px auto 80px; }
+.intro-card { padding: clamp(28px, 6vw, 64px); border-radius: 24px; color: #fff; background: linear-gradient(125deg, #172b58, #285fe0); box-shadow: 0 20px 48px #223e761f; }
+.eyebrow, .task-number { color: #7094ff; font-size: 12px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; }
+.intro-card .eyebrow { color: #b8caff; }
+h1, h2, h3 { font-family: 'Space Grotesk', sans-serif; }
+h1 { margin: 10px 0 14px; font-size: clamp(34px, 6vw, 54px); letter-spacing: -.04em; }
+.intro-card > p:not(.eyebrow) { max-width: 560px; color: #dbe5ff; line-height: 1.7; }
+.student-line { margin-top: 28px; }
+.button-link, .action-button { display: inline-flex; align-items: center; justify-content: center; border: 0; border-radius: 10px; padding: 12px 17px; color: #fff; background: #2457d6; font: 600 14px 'DM Sans', sans-serif; text-decoration: none; cursor: pointer; }
+.intro-card .button-link { margin-top: 8px; color: #17316e; background: #fff; }
+.task-overview { margin-top: 54px; }
+.task-overview h2 { font-size: 25px; }
+.task-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+.task-card, .lesson-card { display: block; padding: 24px; border: 1px solid #e3eaf3; border-radius: 16px; background: #fff; box-shadow: 0 8px 24px #243c6410; }
+a.task-card { color: inherit; text-decoration: none; transition: transform .18s ease, box-shadow .18s ease; }
+a.task-card:hover { transform: translateY(-3px); box-shadow: 0 14px 30px #243c641a; }
+.task-card span { color: #2457d6; font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: .08em; }
+.task-card h3 { margin: 10px 0 6px; font-size: 19px; }
+.task-card p, .lesson-card > p:not(.task-number) { margin-bottom: 0; color: #65748a; line-height: 1.65; }
+.back-link { display: inline-block; margin-bottom: 26px; }
+.lead { max-width: 620px; color: #65748a; line-height: 1.7; }
+.lesson-card { margin-top: 20px; }
+.lesson-card h2 { margin: 5px 0; font-size: 21px; }
+.task-number { margin: 0; }
+.action-button { margin-top: 18px; }
+.example-row { display: flex; justify-content: space-between; gap: 18px; padding: 14px 0; border-top: 1px solid #edf0f5; }
+.example-row:first-of-type { margin-top: 18px; }
+.example-label { color: #65748a; font-size: 14px; }
+code { color: #2457d6; font-size: 13px; }
+
+@media (max-width: 600px) {
+  .site-header { padding: 16px 20px; }
+  .site-title { font-size: 16px; }
+  nav a { padding: 8px 9px; }
+  .page-shell { width: min(100% - 32px, 960px); margin-top: 28px; }
+  .task-grid { grid-template-columns: 1fr; }
+  .example-row { flex-direction: column; gap: 6px; }
+}
