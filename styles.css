@@ -75,6 +75,15 @@ code { color: #2457d6; font-size: 13px; }
 .live-result span { color: #2457d6; font-weight: 600; }
 .calculator-fields { max-width: 420px; }
 .calculator-buttons { margin-top: 16px; }
+.todo-form { margin-top: 18px; }
+.todo-input-row { display: flex; gap: 10px; }
+.todo-input-row .action-button { flex: 0 0 auto; margin: 0; }
+.todo-list { display: grid; gap: 10px; margin: 16px 0 0; padding: 0; list-style: none; }
+.todo-item { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 12px 14px; border: 1px solid #e5ebf3; border-radius: 10px; background: #f8faff; }
+.todo-label { display: flex; align-items: center; gap: 10px; min-width: 0; color: #40516b; overflow-wrap: anywhere; }
+.todo-label input { width: 17px; height: 17px; accent-color: #2457d6; }
+.todo-completed span { color: #8491a3; text-decoration: line-through; }
+.delete-button { flex: 0 0 auto; padding: 8px 10px; border: 0; border-radius: 8px; color: #a33939; background: #fff0f0; font: 600 13px 'DM Sans', sans-serif; cursor: pointer; }
 
 @media (max-width: 600px) {
   .site-header { padding: 16px 20px; }
@@ -83,4 +92,6 @@ code { color: #2457d6; font-size: 13px; }
   .page-shell { width: min(100% - 32px, 960px); margin-top: 28px; }
   .task-grid { grid-template-columns: 1fr; }
   .example-row { flex-direction: column; gap: 6px; }
+  .todo-input-row { align-items: stretch; flex-direction: column; }
+  .todo-input-row .action-button { align-self: flex-start; }
 }
