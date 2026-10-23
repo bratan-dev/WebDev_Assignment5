@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Part 2 | JavaScript Basics</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="part2.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="site-title" href="index.html">JavaScript Basics</a>
+    <nav aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="part1.html">Part 1</a>
+      <a href="part2.html" aria-current="page">Part 2</a>
+    </nav>
+  </header>
+  <main class="page-shell">
+    <a class="back-link" href="index.html">← All assignment parts</a>
+    <p class="eyebrow">Part 2</p>
+    <h1>DOM Manipulation</h1>
+    <p class="lead">These examples use JavaScript to find page elements and update them after a button click.</p>
+    <section class="lesson-card" aria-labelledby="task-two-title">
+      <p class="task-number">Task 2</p>
+      <h2 id="task-two-title">Changing Content</h2>
+      <p id="changing-text">This paragraph will change when you press the button.</p>
+      <button class="action-button" id="change-text-button" type="button">Change text</button>
+    </section>
+    <section class="lesson-card" aria-labelledby="task-three-title">
+      <p class="task-number">Task 3</p>
+      <h2 id="task-three-title">Changing Styles</h2>
+      <div class="style-demo" id="style-demo">Use the buttons to change this block's background and text size.</div>
+      <div class="button-row">
+        <button class="action-button" id="change-color-button" type="button">Change background</button>
+        <button class="action-button secondary-button" id="change-size-button" type="button">Change font size</button>
+      </div>
+    </section>
+    <section class="lesson-card" aria-labelledby="task-four-title">
+      <p class="task-number">Task 4</p>
+      <h2 id="task-four-title">Creating and Removing Elements</h2>
+      <div class="button-row">
+        <button class="action-button" id="add-item-button" type="button">Add Item</button>
+        <button class="action-button secondary-button" id="remove-item-button" type="button">Remove Item</button>
+      </div>
+      <ul class="demo-list" id="item-list" aria-live="polite">
+        <li>First list item</li>
+      </ul>
+      <p class="list-message" id="list-message" aria-live="polite">1 item in the list.</p>
+    </section>
+  </main>
+</body>
+</html>

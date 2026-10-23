@@ -58,6 +58,14 @@ a.task-card:hover { transform: translateY(-3px); box-shadow: 0 14px 30px #243c64
 .example-row:first-of-type { margin-top: 18px; }
 .example-label { color: #65748a; font-size: 14px; }
 code { color: #2457d6; font-size: 13px; }
+.button-row { display: flex; flex-wrap: wrap; gap: 10px; }
+.secondary-button { color: #2457d6; background: #edf3ff; }
+.style-demo { margin-top: 18px; padding: 22px; border-radius: 12px; color: #263a5a; background: #edf3ff; line-height: 1.6; transition: background-color .2s ease, font-size .2s ease; }
+.style-demo.alternate-background { background: #dff4ec; }
+.style-demo.large-text { font-size: 21px; }
+.demo-list { display: grid; gap: 8px; padding-left: 22px; color: #40516b; }
+.demo-list li { padding: 8px 10px; border-radius: 8px; background: #f4f7fb; }
+.list-message { color: #65748a; font-size: 13px; }
 
 @media (max-width: 600px) {
   .site-header { padding: 16px 20px; }

@@ -1,5 +1,5 @@
 const studentName = "Kuan Amirlan";
-const studentGroup = "Not provided";
+const studentGroup = "SE-2528";
 
 console.log("Name:", studentName);
 console.log("Group:", studentGroup);
