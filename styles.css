@@ -66,6 +66,15 @@ code { color: #2457d6; font-size: 13px; }
 .demo-list { display: grid; gap: 8px; padding-left: 22px; color: #40516b; }
 .demo-list li { padding: 8px 10px; border-radius: 8px; background: #f4f7fb; }
 .list-message { color: #65748a; font-size: 13px; }
+.hover-box { display: grid; min-height: 130px; place-items: center; margin-top: 18px; border: 2px dashed #b8c8e2; border-radius: 14px; color: #526681; background: #f4f7fb; text-align: center; transition: color .2s ease, background-color .2s ease; }
+.hover-box.hover-box-active { border-color: #2457d6; color: #fff; background: #2457d6; }
+.field-label { display: block; margin: 16px 0 8px; color: #40516b; font-size: 14px; font-weight: 600; }
+.text-input { width: 100%; padding: 12px 14px; border: 1px solid #d9e1ed; border-radius: 10px; color: #17243a; background: #fff; font: 15px 'DM Sans', sans-serif; }
+.text-input:focus { outline: 3px solid #2457d633; border-color: #2457d6; }
+.live-result { margin: 16px 0 0; color: #526681; }
+.live-result span { color: #2457d6; font-weight: 600; }
+.calculator-fields { max-width: 420px; }
+.calculator-buttons { margin-top: 16px; }
 
 @media (max-width: 600px) {
   .site-header { padding: 16px 20px; }
